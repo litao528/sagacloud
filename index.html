@@ -3,144 +3,256 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>sagacloud</title>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>sagacloud原型导航</title>
+    <link rel="shortcut icon" href="ico.ico" />
+    <link rel="stylesheet" href=" css/iconfont.css">
+    <link rel="stylesheet" href="../plug-in/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
-
-
-    <div class="c-work">
-        <ul class="c-work__list js-work">
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="0" onclick="window.open('https://litao528.github.io/sagacloud-web/')">
-                    <span class="c-work-item__number u-b6">01</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">慧云盈运维平台V3.0</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>原型</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="1" onclick="window.open('https://litao528.github.io/sagacloud-app/')">
-                    <span class="c-work-item__number u-b6">02</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">扫楼APP</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>原型</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="2" onclick="window.open('https://litao528.github.io/tz1.1-1.4/')">
-                    <span class="c-work-item__number u-b6">03</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">台账历史版本</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>原型</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="3" onclick="window.open('http://uidesigner.group:566/')">
-                    <span class="c-work-item__number u-b6">04</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">资料/计划</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>文件</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="4" onclick="window.open('https://litao528.github.io/sagacloud-revit/')">
-                    <span class="c-work-item__number u-b6">05</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">revit插件</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>原型</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="5" onclick="window.open('https://litao528.github.io/sagacloud-library/')">
-                    <span class="c-work-item__number u-b6">06</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">产品管理</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>原型</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-
-            <!-- WORK ITEM -->
-            <li class="c-work__item">
-                <div class="c-work-item js-work-item" data-work-preview-id="6" onclick="window.open('https://litao528.github.io/Center-Tool/')">
-                    <span class="c-work-item__number u-b6">07</span>
-                    <div class="c-work-item__title">
-                        <h3 class="u-a6">中台工具</h3>
-                    </div>
-                    <span class="c-work-item__category u-b4"><i>/</i>原型</span>
-                </div>
-            </li>
-            <!-- //WORK ITEM -->
-        </ul>
-
-        <div class="c-work-preview">
-
-            <div class="c-work-preview__canvas js-work-preview-list">
-                <div class="canvas js-work-preview-canvas" data-displacement-map="img/7.jpg" style="background-image:url(img/7.jpg);"></div>
+    <div class="container" id="container">
+        <aside class="left-bar" id="leftBar">
+            <div class="title">
+                <!-- <p>luguo124导航</p> -->
             </div>
+            <nav class="nav">
+                <div class="item active"><a href=""><i class="iconfont icon-daohang2"></i>原型导航</a><i class="line"></i>
+                </div>
+                <ul class="nav-item" id="navItem">
+                    <li><a href="#bbs" class="active"><i class="iconfont icon-shequ"></i> ADM </a></li>
+                    <li><a href="#sill"><i class="iconfont icon-blogger"></i>绘图工具</a></li>
+                    <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>中台工具</a></li>
+                    <!-- <li><a href="#study"><i class="iconfont icon-xuexi1"></i>学无止境</a></li> -->
+                    <!-- <li><a href="#operation"><i class="iconfont icon-yunying"></i>网络运营</a></li> -->
+                </ul>
+                <!-- <div class="item comment"><a target="_blank" href="https://luguo124.github.io/about-me/"><i class="iconfont icon-liuyan"></i>联系我</a></div> -->
+            </nav>
+        </aside>
+        <section class="main">
+            <div id="mainContent">
+                <!-- 手机端菜单 -->
+                <div id="menu-box">
+                    <div id="menu">
+                        <input type="checkbox" id="menu-form">
+                        <label for="menu-form" class="menu-spin">
+                            <div class="line diagonal line-1"></div>
+                            <div class="line horizontal"></div>
+                            <div class="line diagonal line-2"></div>
+                        </label>
+                    </div>
+                </div>
+                <!-- ADM -->
+                <div class="box">
+                    <a href="#" name="bbs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-shequ"></i>ADM</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://litao528.github.io/sagacloud-web/">
+                            <div class="item">
+                                <div class="logo"><img src="img/1.png">  运维平台V3.0</div>
+                                <div class="desc">慧云盈运维平台V3.0原型</div>
+                            </div>
+                        </a>
+                        <a href="https://litao528.github.io/sagacloud-app/">
+                            <div class="item">
+                                <div class="logo"><img src="img/2.png"> 扫楼App</div>
+                                <div class="desc">扫楼APP原型</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://litao528.github.io/tz1.1-1.4/">
+                            <div class="item">
+                                <div class="logo"><img src="img/3.png">  台账功能历史版本</div>
+                                <div class="desc">运维平台-台账功能历史原型</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="http://uidesigner.group:566/">
+                            <div class="item">
+                                <div class="logo"><img src="img/4.png">  资料/计划</div>
+                                <div class="desc">相关文档及排期计划</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://litao528.github.io/sagacloud-revit/">
+                            <div class="item">
+                                <div class="logo"><img src="img/5.png">  revit插件</div>
+                                <div class="desc">revit相关插件原型</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://litao528.github.io/sagacloud-library/">
+                            <div class="item">
+                                <div class="logo"><img src="img/6.png">  产品管理</div>
+                                <div class="desc">新版厂商库原型</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="https://">
+                            <div class="item">
+                                <div class="logo"><img src="img/wj.png" > 主标题 </div>
+                                <div class="desc"> 副标题 </div>
+                            </div>
+                        </a> -->
 
-            <ul class="c-work-preview__list js-work-preview-list">
-                <!-- WORK ITEM PREVIEW -->
-                <li class="c-work-preview__item"><i class="c-work-preview__image js-work-preview" data-work-preview="img/work-2.jpg" style="background-image: url(img/work-2.jpg);"></i></li>
-                <!-- //WORK ITEM PREVIEW -->
+                    </div>
+                </div>
 
-                <!-- WORK ITEM PREVIEW -->
-                <li class="c-work-preview__item"><i class="c-work-preview__image js-work-preview" data-work-preview="img/work-3.jpg" style="background-image: url(img/work-3.jpg);"></i></li>
-                <!-- //WORK ITEM PREVIEW -->
+                <!-- 绘图工具 -->
+                <div class="box">
+                    <a href="#" name="sill"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-blogger"></i>绘图工具</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://litao528.github.io/Floor-plan/">
+                            <div class="item">
+                                <div class="logo"><img src="img/7.png"> 平面图绘制工具</div>
+                                <div class="desc">万达广场平面图绘图工具</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://litao528.github.io/Topology/">
+                            <div class="item">
+                                <div class="logo"><img src="img/8.png"> 拓扑绘制工具</div>
+                                <div class="desc">标准版拓扑图绘制工具</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="http://">
+                            <div class="item">
+                                <div class="logo"><img src="img/wj.png"> 主标题 </div>
+                                <div class="desc"> 副标题 </div>
+                            </div>
+                        </a> -->
 
-                <!-- WORK ITEM PREVIEW -->
-                <li class="c-work-preview__item"><i class="c-work-preview__image js-work-preview" data-work-preview="img/work-4.jpg" style="background-image: url(img/work-4.jpg);"></i></li>
-                <!-- //WORK ITEM PREVIEW -->
+                    </div>
+                </div>
 
-                <!-- WORK ITEM PREVIEW -->
-                <li class="c-work-preview__item"><i class="c-work-preview__image js-work-preview" data-work-preview="img/work-5.jpg" style="background-image: url(img/work-5.jpg);"></i></li>
-                <!-- //WORK ITEM PREVIEW -->
+                <!-- 中台工具 -->
+                <div class="box">
+                    <a href="" name="docs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-wendangdocument78"></i>中台工具</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://litao528.github.io/Center-Tool/">
+                            <div class="item">
+                                <div class="logo"><img src="img/wj.png"> 中台工具</div>
+                                <div class="desc">中台配置工具</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="http://">
+                            <div class="item">
+                                <div class="logo"><img src="img/wj.png" > 主标题</div>
+                                <div class="desc">副标题</div>
+                            </div>
+                        </a> -->
 
-                <!-- WORK ITEM PREVIEW -->
-                <li class="c-work-preview__item"><i class="c-work-preview__image js-work-preview" data-work-preview="img/work-6.jpg" style="background-image: url(img/work-6.jpg);"></i></li>
-                <!-- //WORK ITEM PREVIEW -->
+                    </div>
+                </div>
 
-                <!-- WORK ITEM PREVIEW -->
-                <li class="c-work-preview__item"><i class="c-work-preview__image js-work-preview" data-work-preview="img/work-7.jpg" style="background-image: url(img/work-7.jpg);"></i></li>
-                <!-- //WORK ITEM PREVIEW -->
-            </ul>
-        </div>
-    </div>
+                <!-- 学无止境 -->
+                <!-- <div class="box">
+                    <a href="#" name="study"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-xuexi1"></i>学无止境</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.w3cschool.cn/">
+                            <div class="item">
+                                <div class="no-logo">w3cschool</div>
+                                <div class="desc">学编程，从W3cschool开始</div>
+                            </div>
+                        </a>  
+                        
+                    </div>
+                </div> -->
 
-    <script src='js/jquery.min.js'></script>
-    <script src='js/pixi.min.js'></script>
-    <script src='js/TweenMax.min.js'></script>
-    <script src="js/script.js"></script>
+                <!-- 网络运营 -->
+                <!-- <div class="box">
+                    <a href="" name="operation"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-yunying"></i>网络运营</div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://mp.weixin.qq.com/">
+                            <div class="item">
+                                <div class="no-logo">微信公众平台</div>
+                            </div>
+                        </a>
 
+                    </div>
+                </div> -->
+
+
+
+
+                <div id="fixedBar"><svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z">
+                        </path>
+                    </svg></div>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script>
+            var oMenu = document.getElementById('menu');
+            var oLeftBar = document.getElementById('leftBar');
+            var menuFrom = document.getElementById('menu-form');
+
+            oMenu.onclick = function() {
+                if (oLeftBar.offsetLeft == 0) {
+                    oLeftBar.style.left = -249 + 'px';
+                } else {
+                    oLeftBar.style.left = 0;
+                }
+            }
+
+
+            // 监听页面宽度变化
+            window.onresize = function() {
+                judgeWidth();
+                // console.log(document.documentElement.clientWidth);
+            };
+
+            // 判断页面宽度
+            function judgeWidth() {
+                if (document.documentElement.clientWidth > 481) {
+                    oLeftBar.style.left = 0;
+                } else {
+                    oLeftBar.style.left = -249 + 'px';
+                }
+            }
+
+
+            var oNavItem = document.getElementById('navItem');
+            var aA = oNavItem.getElementsByTagName('a');
+            for (var i = 0; i < aA.length; i++) {
+                aA[i].onclick = function() {
+                    for (var j = 0; j < aA.length; j++) {
+                        aA[j].className = '';
+                    }
+                    this.className = 'active';
+                    if (oLeftBar.offsetLeft == 0) {
+                        if (document.documentElement.clientWidth <= 481) {
+                            oLeftBar.style.left = -249 + 'px';
+                            menuFrom.checked = false;
+
+                        }
+                    }
+                }
+            }
+
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 200) {
+                    $('#fixedBar').fadeIn(300);
+                } else {
+                    $('#fixedBar').fadeOut(300);
+                }
+            });
+            $('#fixedBar').click(function() {
+                $('html,body').animate({
+                    scrollTop: '0px'
+                }, 800);
+            })
+        </script>
 </body>
 
 </html>
